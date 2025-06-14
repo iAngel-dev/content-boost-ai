@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Boost AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Générateur d'idées de contenu TikTok</h1>
+        <form method="post">
+            <input type="text" name="topic" placeholder="Ex: fitness, cuisine..." required>
+            <button type="submit">Générer</button>
+        </form>
+        {% if result %}
+        <div class="result">
+            <h2>Résultat :</h2>
+            <pre>{{ result }}</pre>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
